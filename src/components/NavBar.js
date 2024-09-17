@@ -19,7 +19,7 @@ export const NavBar = () => {
             }
         }
         window.addEventListener("scroll", onScroll);
-        return () => removeEventListener("scroll", onScroll);
+        return () => window.removeEventListener("scroll", onScroll);
     }, [])
 
     const onUpdateActiveLink = (value) => {
